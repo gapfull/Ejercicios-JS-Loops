@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Iteración #6: Mixed For...of e includes - Gonzalo Arechavala</title>
+
+    <script>
+
+        // Iteración #6: Mixed For...of e includes
+        // Usa un bucle **for...of** para recorrer todos los juguetes y elimina los que incluyan la palabra gato. 
+        // Recuerda que puedes usar la función ***.includes()*** para comprobarlo.Puedes usar este array:
+
+
+        const toys = [
+            { id: 5, name: 'Buzz MyYear' },
+            { id: 11, name: 'Action Woman' },
+            { id: 23, name: 'Barbie Man' },
+            { id: 40, name: 'El gato con Guantes' },
+            { id: 40, name: 'El gato felix' }
+        ]
+
+        toys.forEach(function (juguete) {
+            //     for (var key in juguete) {
+            //     console.log("Spiderman tiene " + key + " con valor: " + juguete[key]);
+            // }
+            console.log(juguete)
+        });
+
+let palabro = 'gato';
+let nombrejuguete;
+        // for (let value of toys) {
+        //     console.log(value);
+        //     for (var key in value) {
+        //         console.log("Spiderman tiene " + key + " con valor: " + value[key]);
+        //         nombrejuguete = value[key];
+        //         console.log(nombrejuguete.indexOf(palabro));
+        //     //     if (nombrejuguete.includes(palabro)){
+        //     //         console.log("hay gato encerado");
+        //     // }
+        //     }
+        // }
+
+		for (let value of toys) {
+				//	Buscamos que productos tienen mas de 15 ventas y cargamos por push al array popular
+				if (value.name.includes(palabro)){
+                    console.log('hay gato encerrado')
+				}
+			}
+
+
+
+    </script>
+
+</head>
+
+<body>
+
+    <h1>Iteración #6: Mixed For...of e includes - Gonzalo Arechavala</h1>
+    <p>Para visualizar los resultados de los ejercicios debe abrirse la consola del navegador.</p>
+
+</body>
+
+</html>
